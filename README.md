@@ -55,65 +55,115 @@ mysql -u root -p < scripts/create_database.sql
 export MYSQL_HOST=localhost
 export MYSQL_DATABASE=secure_file_db
 export MYSQL_USER=root
-export MYSQL_PASSWORD=your_password
-\`\`\`
+# Secure File Management System
 
-5. **Run the application**
-\`\`\`bash
+A Flask-based secure file management system that provides strong file confidentiality, integrity, and non-repudiation. The project uses AES-256 for file encryption, RSA for key wrapping and signatures, SHA-256 for hashing, and a simple JSON-backed local datastore for metadata (no external RDBMS required).
+
+## Features
+
+- **AES-256 Encryption**: Symmetric encryption for file data
+- **RSA Key Wrapping & Signatures**: Protect AES keys and sign files
+- **SHA-256 Hashing**: Integrity verification for stored files
+- **PKI (Public Key Infrastructure)**:
+  - Local Certificate Authority (CA) and user X.509 certificates
+  - Digital signatures for files
+  - Certificate revocation support
+  - Audit logging
+- **JSON-backed Local Database**: User, certificate, file metadata and audit logs are stored as JSON files in `data/` (no MySQL required)
+
+## Security Workflow
+
+### Encryption Flow
+```
+Upload → SHA-256 Hash → AES Encrypt → RSA Wrap Key → Digital Sign → Store
+```
+
+### Decryption Flow
+```
+Load → RSA Unwrap Key → AES Decrypt → Verify Signature → Verify Hash → Download
+```
+
+## Installation & Run (Local, JSON DB)
+
+1. Clone the repository
+```
+git clone <repository-url>
+cd secure-file-management
+```
+
+2. Create and activate a virtual environment
+
+Windows (PowerShell / cmd):
+```powershell
+python -m venv venv
+venv\Scripts\Activate.ps1    # PowerShell
+venv\Scripts\activate.bat     # cmd
+```
+
+Linux / macOS:
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the application
+```bash
 python app.py
-\`\`\`
+```
 
-6. **Access the application**
-Open your browser and go to: http://localhost:5000
+5. Open the app in your browser:
+
+http://localhost:5000
+
+Note: This repository was converted to use JSON files under the `data/` folder (for example `data/users.json`, `data/certificates.json`, `data/files.json`, and `data/audit_log.json`). No MySQL server is required for normal operation.
 
 ## Project Structure
 
-\`\`\`
+```
 secure-file-management/
 ├── app.py                    # Main Flask application
 ├── requirements.txt          # Python dependencies
 ├── models/
 │   ├── __init__.py
-│   ├── aes_model.py         # AES encryption/decryption
-│   ├── rsa_model.py         # RSA key operations
-│   ├── hash_model.py        # SHA-256 hashing
-│   ├── pki_model.py         # PKI/Certificate operations
-│   └── database.py          # MySQL database operations
+│   ├── aes_model.py          # AES encryption/decryption
+│   ├── rsa_model.py          # RSA key operations
+│   ├── hash_model.py         # SHA-256 hashing
+│   ├── pki_model.py          # PKI/Certificate operations
+│   └── local_database.py     # JSON-backed local datastore operations
 ├── controllers/
 │   ├── __init__.py
-│   ├── file_controller.py   # File encryption/decryption logic
-│   └── pki_controller.py    # User/Certificate management
-├── templates/               # HTML templates
-├── uploads/                 # Uploaded files (temporary)
-├── encrypted/               # Encrypted files + keys + hashes
-├── processed/               # Decrypted files
-├── certs/                   # CA and user certificates
-└── scripts/
-    └── create_database.sql  # Database schema
-\`\`\`
+│   ├── file_controller.py    # File encryption/decryption logic
+│   └── pki_controller.py     # User/Certificate management
+├── templates/                # HTML templates
+├── uploads/                  # Uploaded files (temporary)
+├── encrypted/                # Encrypted files + keys + hashes
+├── processed/                # Decrypted files
+├── certs/                    # CA and user certificates
+├── data/                     # JSON files used as local DB
+└── scripts/                  # Misc scripts (some SQL scripts are included but not required)
+```
 
-## Usage
+## Usage Notes
 
-### Without Database (Basic Mode)
-The system works without MySQL for basic encryption/decryption. PKI features will be limited.
-
-### With Database (Full Mode)
-1. Register a user account (generates X.509 certificate)
-2. Login to access dashboard
-3. Upload files for encryption (automatically signed if you have a certificate)
-4. Download encrypted files
-5. Upload encrypted files for decryption (signature and hash verified)
+- Basic mode (no external DB): the app uses `data/*.json` as its datastore. PKI features (certificate generation, signatures) work with the files in `certs/`.
+- If you previously used MySQL, note that this repository now uses JSON files for storage; any MySQL-specific scripts are optional and not required for normal operation.
 
 ## Environment Variables
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| SECRET_KEY | your_super_secret_key | Flask session secret |
-| MYSQL_HOST | localhost | MySQL server host |
-| MYSQL_DATABASE | secure_file_db | Database name |
-| MYSQL_USER | root | MySQL username |
-| MYSQL_PASSWORD | (empty) | MySQL password |
-| MYSQL_PORT | 3306 | MySQL port |
+| Variable   | Default                     | Description                  |
+|------------|-----------------------------|------------------------------|
+| SECRET_KEY | your_super_secret_key       | Flask session secret         |
+| PORT       | 5000                        | Port the app will bind to    |
+
+## Troubleshooting
+
+- Ensure `data/` and `certs/` directories exist and are writable by the app.
+- If you see issues with certificates or keys, check the `certs/` folder and `data/certificates.json` for malformed entries.
 
 ## License
 
