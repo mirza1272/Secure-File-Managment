@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "serial_number": "41348519600796824486610354502055497657008013750",
+    "fingerprint": "49cc57382590fbb0c27fa2d1e6378edfb6a0337df0f09c6747c364e2cf29cd6a",
+    "subject": "Haseeb ur Rahman",
+    "issuer": "SecureFile CA",
+    "not_valid_before": "2026-05-10 09:18:53+00:00",
+    "not_valid_after": "2027-05-10 09:18:53+00:00",
+    "cert_path": "certs\\user_1\\cert_1778404733.pem",
+    "key_path": "certs\\user_1\\private_key_1778404733.pem",
+    "public_key_path": "certs\\user_1\\public_key_1778404733.pem",
+    "status": "active",
+    "created_at": "2026-05-10T14:18:53.304771"
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "serial_number": "726628396878701445359437720253024587814298365926",
+    "fingerprint": "dc77b822c0b76d0ca7eddbef7e44db63c500f4cc89fcf6550a7741cedc7ec8cb",
+    "subject": "Mirza Haseeb",
+    "issuer": "SecureFile CA",
+    "not_valid_before": "2026-05-11 07:54:24+00:00",
+    "not_valid_after": "2027-05-11 07:54:24+00:00",
+    "cert_path": "certs\\user_2\\cert_1778486064.pem",
+    "key_path": "certs\\user_2\\private_key_1778486064.pem",
+    "public_key_path": "certs\\user_2\\public_key_1778486064.pem",
+    "status": "active",
+    "created_at": "2026-05-11T12:54:24.937455"
+  }
+]

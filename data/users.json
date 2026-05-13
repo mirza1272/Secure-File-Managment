@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "email": "mirzahaseeb0566@gmail.com",
+    "name": "Haseeb ur Rahman",
+    "password_hash": "e03a90d5cbd723487601b7ee5897bfb6c609cca0c2e93f70a95f84f70d008921",
+    "created_at": "2026-05-10T14:18:52.758799",
+    "updated_at": "2026-05-10T14:18:52.758804"
+  },
+  {
+    "id": 2,
+    "email": "f230566@cfd.nu.edu.pk",
+    "name": "Mirza Haseeb",
+    "password_hash": "e03a90d5cbd723487601b7ee5897bfb6c609cca0c2e93f70a95f84f70d008921",
+    "created_at": "2026-05-11T12:54:24.054951",
+    "updated_at": "2026-05-11T12:54:24.054971"
+  }
+]

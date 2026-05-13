@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "action": "USER_REGISTERED",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User registered: mirzahaseeb0566@gmail.com",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T14:18:53.305521"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "action": "CERT_GENERATED",
+    "resource_type": "certificate",
+    "resource_id": null,
+    "details": "X.509 certificate generated for: mirzahaseeb0566@gmail.com",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T14:18:53.306193"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User logged in: mirzahaseeb0566@gmail.com",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T14:19:29.388241"
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "action": "VIEW_PUBLIC_KEY",
+    "resource_type": "certificate",
+    "resource_id": 1,
+    "details": "User viewed public key",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T14:19:54.764135"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "action": "ENCRYPT_FILE",
+    "resource_type": "file",
+    "resource_id": null,
+    "details": "Encrypted file: project_report.docx",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T14:20:47.859200"
+  },
+  {
+    "id": 6,
+    "user_id": 1,
+    "action": "DECRYPT_FILE",
+    "resource_type": "file",
+    "resource_id": null,
+    "details": "Decrypted file: encrypted_project_report_20260510_142047.docx",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T14:23:01.558456"
+  },
+  {
+    "id": 7,
+    "user_id": 1,
+    "action": "USER_LOGOUT",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User logged out",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T16:13:53.687118"
+  },
+  {
+    "id": 8,
+    "user_id": 1,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User logged in: mirzahaseeb0566@gmail.com",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T16:14:09.718497"
+  },
+  {
+    "id": 9,
+    "user_id": 1,
+    "action": "USER_LOGOUT",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User logged out",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-10T16:14:55.551099"
+  },
+  {
+    "id": 10,
+    "user_id": 1,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User logged in: mirzahaseeb0566@gmail.com",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:41:56.413148"
+  },
+  {
+    "id": 11,
+    "user_id": 1,
+    "action": "ENCRYPT_FILE",
+    "resource_type": "file",
+    "resource_id": null,
+    "details": "Encrypted file: findings research paper about deepfake.docx",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:42:35.660255"
+  },
+  {
+    "id": 12,
+    "user_id": 1,
+    "action": "DECRYPT_FILE",
+    "resource_type": "file",
+    "resource_id": null,
+    "details": "Decrypted file: encrypted_findings research paper about deepfake_20260511_124235.docx",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:43:03.835014"
+  },
+  {
+    "id": 13,
+    "user_id": 1,
+    "action": "USER_LOGOUT",
+    "resource_type": "user",
+    "resource_id": 1,
+    "details": "User logged out",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:51:30.737929"
+  },
+  {
+    "id": 14,
+    "user_id": 2,
+    "action": "USER_REGISTERED",
+    "resource_type": "user",
+    "resource_id": 2,
+    "details": "User registered: f230566@cfd.nu.edu.pk",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:54:24.939938"
+  },
+  {
+    "id": 15,
+    "user_id": 2,
+    "action": "CERT_GENERATED",
+    "resource_type": "certificate",
+    "resource_id": null,
+    "details": "X.509 certificate generated for: f230566@cfd.nu.edu.pk",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:54:24.942478"
+  },
+  {
+    "id": 16,
+    "user_id": 2,
+    "action": "USER_LOGIN",
+    "resource_type": "user",
+    "resource_id": 2,
+    "details": "User logged in: f230566@cfd.nu.edu.pk",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:55:10.467153"
+  },
+  {
+    "id": 17,
+    "user_id": 2,
+    "action": "ENCRYPT_FILE",
+    "resource_type": "file",
+    "resource_id": null,
+    "details": "Encrypted file: PROJECT_REPORT (1).docx",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:55:36.366043"
+  },
+  {
+    "id": 18,
+    "user_id": 2,
+    "action": "DECRYPT_FILE",
+    "resource_type": "file",
+    "resource_id": null,
+    "details": "Decrypted file: encrypted_PROJECT_REPORT (1)_20260511_125536.docx",
+    "ip_address": "127.0.0.1",
+    "created_at": "2026-05-11T12:56:46.316218"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "original_filename": "project_report.docx",
+    "encrypted_filename": "encrypted_project_report_20260510_142047.docx",
+    "original_hash": "115c4d3c4bc6efd1f76bdd06159c192aa7996d6ca1c57dcb9eb0098555825711",
+    "encrypted_hash": "858ae262e69ee05e0d174776dd35bb980852aeb7d46b2205dc93ffbf3076a439",
+    "file_size": 12974,
+    "certificate_id": 1,
+    "created_at": "2026-05-10T14:20:47.858370"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "original_filename": "findings research paper about deepfake.docx",
+    "encrypted_filename": "encrypted_findings research paper about deepfake_20260511_124235.docx",
+    "original_hash": "c5f0199b18ccc90dcee585ffa6abb92d0de1751e4f2c802fd794dd63cbe272c2",
+    "encrypted_hash": "12604d443de9fa0b201cbbb2a403cec787e06f7e05234605781cf421768a2792",
+    "file_size": 33652,
+    "certificate_id": 1,
+    "created_at": "2026-05-11T12:42:35.657535"
+  },
+  {
+    "id": 3,
+    "user_id": 2,
+    "original_filename": "PROJECT_REPORT (1).docx",
+    "encrypted_filename": "encrypted_PROJECT_REPORT (1)_20260511_125536.docx",
+    "original_hash": "07f2f3ffde55a453d3d2b7d57c9a7d086b2ef5ed68a726f5a45075625326f747",
+    "encrypted_hash": "5c7c5b9b4e489a4cc97a6993529bd823363b0fc572ef2d0b802e61504a06bf55",
+    "file_size": 43169,
+    "certificate_id": 2,
+    "created_at": "2026-05-11T12:55:36.363618"
+  }
+]

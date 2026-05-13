@@ -1,0 +1,17 @@
+{
+  "subject": {
+    "countryName": "US",
+    "organizationName": "SecureFile Inc",
+    "commonName": "SecureFile CA"
+  },
+  "issuer": "CN=SecureFile CA,O=SecureFile Inc,C=US",
+  "serial_number": "444533954221392821479166182011400341085238088053",
+  "not_valid_before": "2026-05-10 09:18:53+00:00",
+  "not_valid_after": "2036-05-07 09:18:53+00:00",
+  "fingerprint_sha256": "5a37a31a7179efa69fc3e14194caccfbe930849c8c2c9bac2f858d72ecb0b3ed",
+  "public_key_algorithm": "RSAPublicKey",
+  "signature_algorithm": "sha256WithRSAEncryption",
+  "is_ca": true,
+  "cert_path": "certs\\ca_cert.pem",
+  "public_key_path": "certs\\ca_public_key.pem"
+}
