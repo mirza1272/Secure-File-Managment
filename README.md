@@ -165,6 +165,11 @@ secure-file-management/
 - Ensure `data/` and `certs/` directories exist and are writable by the app.
 - If you see issues with certificates or keys, check the `certs/` folder and `data/certificates.json` for malformed entries.
 
+
+## Author
+
+Haseeb ur Rahman
+
 ## License
 
 MIT License
