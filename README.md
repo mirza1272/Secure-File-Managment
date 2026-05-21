@@ -34,7 +34,7 @@ git clone <repository-url>
 cd secure-file-management
 \`\`\`
 
-2. **Create virtual environment**
+2. **Create virtual environment inside project folder**
 \`\`\`bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
