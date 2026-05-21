@@ -2,7 +2,7 @@
 
 A Flask-based secure file management system with AES-256 encryption, RSA key wrapping, SHA-256 hashing, and PKI (Public Key Infrastructure).
 
-## Features
+## Features of Project
 
 - **AES-256 Encryption**: Military-grade symmetric encryption for file data
 - **RSA-2048 Key Wrapping**: Asymmetric encryption to protect AES keys
