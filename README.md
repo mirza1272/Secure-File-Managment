@@ -132,7 +132,7 @@ secure-file-management/
 │   ├── __init__.py
 │   ├── aes_model.py          # AES encryption/decryption
 │   ├── rsa_model.py          # RSA key operations
-│   ├── hash_model.py         # SHA-256 hashing
+│   ├── hash_model.py         # SHA-256 hash functions
 │   ├── pki_model.py          # PKI/Certificate operations
 │   └── local_database.py     # JSON-backed local datastore operations
 ├── controllers/
