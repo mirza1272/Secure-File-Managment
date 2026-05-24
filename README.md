@@ -144,7 +144,7 @@ secure-file-management/
 ├── encrypted/                # Encrypted files + keys + hashes
 ├── processed/                # Decrypted files
 ├── certs/                    # CA and user certificates
-├── data/                     # JSON files used as local DB
+├── data/                     # JSON files used as local DB (No SQL)
 └── scripts/                  # Misc scripts (some SQL scripts are included but not required)
 ```
 
